@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="shortcut icon" href="C:\Users\STI Info\Documents\1st website\Imagens\newlogo.jpeg">
+        <meta charset="UTF-8"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            body{
+                background:rgb(88, 236, 88);
+            }
+            .slider{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100vh;
+                background: green;
+                z-index:-1;
+
+            }
+           
+            .section{
+                display:flex;
+                height:80vh;
+                justify-content: center;
+                align-items: center;
+            }
+            .Principal{
+                height:80%;
+                width:100%;
+                margin-top: 2cm;
+                
+                
+            }
+            .Principal img{
+                width:80%;
+                height:80%;
+                margin-left: 28%;
+                
+                
+            }
+            .headline{
+                position:absolute;
+                top:35%;
+                left:20%;
+                font-size: 55px;
+                transform:translate(-20%, -70%);
+                z-index: 2;
+            }
+            .headline2{
+                position:absolute;
+                top:67%;
+                left:18%;
+                font-size:50px;
+                transform:translate(-20%, -70%);
+                z-index: 2;
+
+            }
+            .menu ul{
+                position: absolute;
+                top:5%;
+                left:2%;
+                padding:20px;
+                text-transform: uppercase;
+                list-style: none;
+                text-decoration: none;
+
+                
+            }
+            .menu a{
+                text-decoration: none;
+                color:black;
+            }
+
+            .menu li{
+                padding:5px;
+                display:inline-block;
+                transition: background-color 1s
+            }
+            .menu li:hover{
+                background-color: chartreuse;
+            }
+            .rp{
+                display:flex;
+                padding:0cm;
+                margin-left: 51%;
+                font-size: 11pt;
+                
+                
+            }
+            footer{
+                background-color: rgb(1, 82, 1);
+                width:100%;
+                margin-top: 0.5cm;
+                align-content: center;
+                
+            }
+            .rp1{
+                display:flex;
+                padding:0cm;
+                margin-left: 53.5%;
+                font-size: 11pt;
+                
+            }
+            .rp2{
+                display:flex;
+                padding:0cm;
+                margin-left: 48%;
+                font-size: 11pt;
+
+            }
+            .facebook {position: absolute;
+                top: 92%;
+                left: 30cm;
+            }
+.linkedin {
+  position: absolute;
+  top: 92%;
+  left: 31cm;
+}
+            
+            
+           
+            
+          
+            
+            
+        </style>
+        
+
+        
+    </head>
+    <body>
+        
+
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li> <a href="IndexH.html">Home</a></li>
+                    <li> <a href="Página2.html">Conteúdo</a></li>
+                    <li><a href="Página5.html">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <section>
+                <div class="Principal">
+                    <img src="https://native.emsservice.de/images/article454_image1596463766645.jpeg">
+                    <h1 class="headline"> TI Verde</h1>
+                    <h1 class="headline2">Sustentabilidade com Ambev</h1>
+                </div>
+            </section>
+        </header>
+        
+
+        <div class="slider"></div>
+                                      
+                                    <!-- o SRC em baixo peguei no site cdnjs.com/libraries/gsap/latest-->
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
+            <script>
+                const Principal=document.querySelector(".Principal");
+                const slider=document.querySelector(".slider");
+                const headline=document.querySelector(".headline");
+                const headline2=document.querySelector(".headline2");
+               
+                
+                const tl = new TimelineMax();
+                tl.fromTo(Principal,1,{x: "-100%"}, {x: "0%", ease:Power2.easeInOut}).
+                fromTo(Principal, 1.2, {width: "20%"}, {width:"90%", ease:Power2.easeInOut, duration: 1}, "-=1.2").
+                fromTo(slider, 1.2, {x: "-100%"}, {x:"0%", ease:Power2.easeInOut})
+                
+                
+                
+                
+            </script>
+
+            <footer>
+                <div class="footer">
+                    <p class="rp2">
+                        Desenvolvido por Os Ambíguos
+                    </p>
+                    <p class="rp">Etec Guarulhos</p>
+                    <p class="rp1">2020</p>
+                </div>
+                <a href="https://www.facebook.com/etecguarulhos" target='_blank'><img class="facebook" src="https://www.ambev.com.br/conteudo/themes/ambev-institucional/src/img/brands/social_facebook.png" width=25px/></a>
+        <a href="#"><img class="linkedin" src="https://www.ambev.com.br/conteudo/themes/ambev-institucional/src/img/brands/social_linkedin.png" width=25px/></a>
+               
+
+               
+            </footer>
+            
+
+
+
+    </body>
+
+
+
+
+</html>

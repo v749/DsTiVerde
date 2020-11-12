@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="shortcut icon" href="C:\Users\STI Info\Documents\1st website\Imagens\newlogo.jpeg">
+       <title>Início</title>
+       <style>
+           body{
+               margin: 20px;
+               margin-right: 5cm;
+               font-family: Georgia, 'Times New Roman', Times, serif;
+               margin-top: 1cm;
+               margin-left: 2cm;
+               margin-bottom: 1cm;
+           }
+
+           
+
+           .natur{
+               text-align: justify;
+               margin-right: 6cm;
+               line-height: 0.8cm;
+           }
+           h1{
+               color: rgb(10, 92, 10);
+               font-weight: bolder;
+           }
+           div{
+               display: block;    
+           }
+           .ambev{
+               color:rgb(124, 10, 10)
+           }
+           .menu{
+               height:7vh;
+               background: green;
+               display:inline-flex;
+               justify-content: space-around;
+               align-items: center;
+               width:35%;
+               position:fixed;
+               margin:auto;
+               top:0%;
+               left:60%;
+               
+           }
+           .Programas{
+               position:relative;
+               
+           }
+           .Programas ul{
+               position: absolute;
+               list-style: none;
+               background: green;
+               margin-top: 10px;
+               left:0%;
+               width:150px;
+               height:100px;
+               display:flex;
+               justify-content: space-around;
+               
+               flex-direction: column;
+               
+               margin:auto;
+               opacity: 0;
+               pointer-events: none;
+               transform: translateY(10px);
+               transition: all 0.4s ease;
+           }
+           .home, .contato, .metas{
+               position: relative;
+           }
+           .Programas a{
+               color:black;
+               text-decoration: none;
+               align-items: center;
+               
+           }
+           .Programas li{
+               background: green;
+               display:flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+
+           }
+           .Programas li:hover{
+               background-color: greenyellow;
+               
+           }
+           .menu button, .home, .contato, .metas, .Programas, .selos2{
+               background: green;
+               border:none;
+               color:black;
+               text-decoration: none;
+               cursor:pointer;
+           }
+           menu button,.contato:hover, .home:hover, .metas:hover, .Programas, .selos2{
+               color:greenyellow;
+           }
+           .botao:hover{
+            color:greenyellow;
+           }
+           .Programas button:focus + ul {
+               opacity: 1;
+               pointer-events: all;
+               
+           }
+           .metas, .selo2{
+               pointer-events: all;
+           }
+
+           .cia{
+               color:rgb(124, 10, 10);
+           }
+           .cia a{
+               text-decoration: none;
+               color:rgb(124, 10, 10);
+           }
+           .coluna{
+               color: green;
+               background: green;
+               position:absolute;
+               left:95%;
+               width: 5%;
+               height:305%;
+               top: 0%;
+           }
+           .container{}
+           .container img{
+              left:10cm;
+               position:absolute;
+               width:34%;
+               height:58%;
+           }
+           .transition-image{
+               position:absolute;
+               opacity:0;
+               transition:opacity 0.5s ease;
+           }
+           .transition-image:hover{
+               opacity: 1;
+           }
+           .container::after{
+               content: "";
+               background: black;
+               width:34%;
+               height:58%;
+               position:absolute;
+              left:10cm;
+               opacity: 0;
+           }
+           .container:hover::after{
+               opacity: 0.05;
+
+           }
+           .p1, .p2{
+               line-height: 1cm;
+               text-align: justify;
+           }
+           .im{
+               margin-top:10px;
+               margin-left:0cm
+                   
+           }
+           .primeiro{
+               margin-top:55px;
+               font-size: 30pt;;
+           }
+           .video{
+               margin-left: 5cm;
+           }
+           .subtema{
+               color:rgb(2, 82, 2);
+           }
+           .container content{
+               display:flex;
+           }
+           .cap{
+               position:absolute;
+               margin-top:200%;
+           }
+           .cap1{
+               position: absolute;
+               left: 30%;
+               font-size: 10pt;
+               line-height: 0.5cm;
+               
+           }
+           .space{
+               line-height:1cm;
+           }
+           .cap4{
+               position:absolute;
+               top:53cm;
+               left:40%;
+               font-size: 10pt;
+           }
+            
+
+           
+
+       </style>
+
+    </head>
+    <body>
+        <div class="coluna"> hfd</div>
+        <h1 class="primeiro">TI Verde e Sustentabilidade com Ambev</h1>
+       
+        <img src="Imagens/tiverde.jpg" class="im" height=390 width=850/></div>
+        <figcaption class=cap1> Fonte: Dreamstime</figcaption>
+    </br>
+
+        <h3 class="space">O que é TI Verde?</h3>
+        <p>TI Verde é o estudo e prática de redução dos impactos ambientas causados pela tecnologia.</p>
+        
+        <h3>O que é Sustentabilidade?</h3>
+        <p class="natur">Sustentabilidade é a capacidade de conservar e agir de maneira responsável a natureza
+            com o objetivo de preservar e mitigar os impactos ambientais causados.
+        </p>
+    <hr>
+        <h2 class="cia"><a href="https://www.ambev.com.br/" target='_blank'>Ambev</a></h2>
+        <p class=p1> A Ambev nasceu em 1999, da união entre a Cervejaria Brahma e Companhia Antartica.
+            Hoje a Ambev está presente em 19 países e conta com 32 cervejarias e 2 maltarias no Brasil,
+            além de ter 30 marcas de bebida. É uma empresa que tem se mostrado engajada em relação a sustentabilidade. 
+            Atualmente, ela integra um grupo de empresas da ONU afim de cumprir suas metas de sustentabilidade.
+        </p>
+        <p class=p2> A plataforma Mundo Melhor aborda temas como: Água, Embalagem Circular, Agricultura Sustentável, Mudança Climática e Empreendedorismo.
+            Com isso eles visam impulsionar o progresso na direção dos Objetivos de Desenvolvimento Sustentável (ODS) da ONU.
+        </p>
+        <div>
+            <header> <h3 class="ambev">Ambev: Juntos por um Mundo melhor </h3></header>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OL1xl5D5fgY" class="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <nav>
+            <div class="menu">
+                <button><a href="IndexH.html" class="home">Home</a> </button>
+                <div class="Programas">
+                    <button class="botao">Programas</button>
+                    <ul>
+                        <li><a href="Página3.html" class="metas">Metas de sustentabilidade</a></li>
+                        <li><a href="Página4.html" class="selo2">Selo de Qualidade</a> </li>
+                    </ul>
+                </div>
+                <button><a href="Página5.html" class="contato">Contato</a> </button>
+            </div>    
+            
+        </nav>
+        <hr>
+        <h2 class=subtema>ESG</h2>
+        <p class=p1>ESG (Environmental, Social, Governance),
+            Ambiental, Social, Governança. É um instrumento 
+            de menção de sustentabilidade de investimentos, esse critério permite
+            a aplicação consciente do capital, por exemplo em ações de uma empresa que
+            usa energias renováveis e é engajada em sua sociedade,
+            ou empréstimos do Estado para a implementação da "Política do Clima", no qual visa orientar
+            empresas sobre a importância do ESG.
+        </p>
+        <div class="container">
+            <img src="C:\Users\STI Info\Documents\1st website\Imagens\ESG.jpeg"  height=400 max-width=600/>
+            
+            
+        </div>
+        <figcaption class=cap4> Fonte: Sustentarqui </figcaption>
+        
+
+        
+        
+        
+       
+        
+    </body>
+      
+    
+
+    
+    
+</html>
